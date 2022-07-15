@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite failures="0" hostname="ibm-samarthshekhar" id="0" name="CrukTraining/tests" package="" skipped="0" tests="1" time="191.281" timestamp="Tue Jun 14 17:29:20 IST 2022">
+	    <properties>
+		      <property name="excludeCallableTestCases" value="true" />
+
+		      <property name="testEnvironment" value="QA" />
+
+		      <property name="pluginOutputLevel" value="WARNING" />
+
+		      <property name="projectPath" value=".." />
+
+		      <property name="salesforceMetadataCache" value="Reuse" />
+
+		      <property name="resultsPathDisposition" value="Increment" />
+
+		      <property name="testOutputLevel" value="INFO" />
+
+		      <property name="webBrowserType" value="Chrome" />
+
+		      <property name="resultsPath" value="../ANT/Results" />
+
+		      <property name="webBrowserConfiguration" value="Full Screen" />
+
+		      <property name="projectCachePath" value="C:\Users\samarth.shekhar\Provar\CRUKTainng\CrukTraining\ANT\..\..\.provarCaches" />
+
+	    </properties>
+
+	    <testcase classname="tests/Training day4\DataDriven.testcase" name="DataDriven.testcase" time="188.173">
+	</testcase>
+
+  </testsuite>
+</testsuites>

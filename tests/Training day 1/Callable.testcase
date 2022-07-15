@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase id="16" registryId="1063ceae-724e-412b-a251-d258b273f298" visibility="Internal">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="1" title="Salesforce Connect: CrukTrainingOrg (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">CrukTrainingOrg</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">CrukTrainingOrg</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">Sales</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument argId="52138be3-3736-4ec2-b3bd-ed9f7be31509" id="reuseConnectionName">
+          <value class="variable">
+            <path element="reuseConnectionName"/>
+          </value>
+        </argument>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="2" title="Create Object: Account=&gt;AccountId">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Account</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">AccountId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">CrukTrainingOrg</value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument argId="a9196eea-6e50-44a7-b91c-7d426233c8a2" id="Name">
+          <value class="variable">
+            <path element="ipName"/>
+          </value>
+        </argument>
+        <argument argId="a8e7b658-5879-4b43-8ebe-386b1aeff085" id="Type">
+          <value class="variable">
+            <path element="ipType"/>
+          </value>
+        </argument>
+        <argument argId="559f51ee-21e3-4a66-b502-0694ba30d178" id="Website">
+          <value class="variable">
+            <path element="ipWebsite"/>
+          </value>
+        </argument>
+        <argument argId="e3566547-64b3-4505-aa49-c43dad0976b5" id="AccountSource">
+          <value class="variable">
+            <path element="ipAccountSource"/>
+          </value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">CrukTrainingOrg</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Account</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Name" name="Name" title="Name"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Type" name="Type" title="Type"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Website" name="Website" title="Website"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=AccountSource" name="AccountSource" title="AccountSource"/>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+  <params>
+    <param linkedToUrl="provar:hasvalue:52138be3-3736-4ec2-b3bd-ed9f7be31509" name="reuseConnectionName" title="Override Connection">
+      <summary>The name of an already opened connect to re-use.</summary>
+      <type>
+        <connectionType>
+          <constraints>
+            <valueConstraint name="variableName">true</valueConstraint>
+            <valueConstraint name="requiredCapabilities">sfSoapConnect</valueConstraint>
+          </constraints>
+        </connectionType>
+      </type>
+    </param>
+    <param linkedToUrl="provar:hasvalue:a9196eea-6e50-44a7-b91c-7d426233c8a2" modelBinding="sf:ui:binding:object?object=Account&amp;field=Name" name="ipName" title="ipName">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:a8e7b658-5879-4b43-8ebe-386b1aeff085" modelBinding="sf:ui:binding:object?object=Account&amp;field=Type" name="ipType" title="ipType">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:559f51ee-21e3-4a66-b502-0694ba30d178" modelBinding="sf:ui:binding:object?object=Account&amp;field=Website" name="ipWebsite" title="ipWebsite">
+      <summary/>
+    </param>
+    <param linkedToUrl="provar:hasvalue:e3566547-64b3-4505-aa49-c43dad0976b5" modelBinding="sf:ui:binding:object?object=Account&amp;field=AccountSource" name="ipAccountSource" title="ipAccountSource">
+      <summary/>
+    </param>
+  </params>
+  <outputParams>
+    <param name="opAccountId" title="opAccountId">
+      <summary>The name under which the resulting Object Id will be stored.</summary>
+      <type>
+        <textType>
+          <constraints>
+            <valueConstraint name="minLength">0</valueConstraint>
+            <valueConstraint name="maxLength">9999</valueConstraint>
+          </constraints>
+        </textType>
+      </type>
+      <sourceValue class="variable">
+        <path element="AccountId"/>
+      </sourceValue>
+    </param>
+  </outputParams>
+  <args>
+    <argument id="reuseConnectionName"/>
+    <argument id="ipName"/>
+    <argument id="ipType"/>
+    <argument id="ipWebsite"/>
+    <argument id="ipAccountSource"/>
+  </args>
+  <outputArgs>
+    <outputArgument id="opAccountId">
+      <name class="value" valueClass="string">opAccountId</name>
+    </outputArgument>
+  </outputArgs>
+</testCase>
