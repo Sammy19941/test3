@@ -70,28 +70,7 @@
           <value class="value" valueClass="boolean">true</value>
         </argument>
       </arguments>
-      <generatedParameters>
-        <param group="source" linkedToUrl="connectionParam:sourceConnectionName" name="folder" title="Folder">
-          <type>
-            <textType/>
-          </type>
-        </param>
-        <param group="source" linkedToUrl="connectionParam:sourceConnectionName" name="from" title="From">
-          <type>
-            <textType/>
-          </type>
-        </param>
-        <param group="source" linkedToUrl="connectionParam:sourceConnectionName" name="subject" title="Subject">
-          <type>
-            <textType/>
-          </type>
-        </param>
-        <param group="source" linkedToUrl="connectionParam:sourceConnectionName" name="parseAttachment" title="Read Email Attachments">
-          <type>
-            <booleanType/>
-          </type>
-        </param>
-      </generatedParameters>
+      <generatedParameters/>
     </apiCall>
     <apiCall apiId="com.provar.plugins.bundled.apis.messaging.SendMessage" name="SendMessage" testItemId="3" title="Send Message: google">
       <arguments>
@@ -119,33 +98,7 @@
           <value class="value" valueClass="string">thanks,\nsamarth</value>
         </argument>
       </arguments>
-      <generatedParameters>
-        <param group="destination" linkedToUrl="connectionParam:destinationConnectionName" mandatory="true" name="to" title="To">
-          <type>
-            <textType/>
-          </type>
-        </param>
-        <param group="destination" linkedToUrl="connectionParam:destinationConnectionName" name="cc" title="CC">
-          <type>
-            <textType/>
-          </type>
-        </param>
-        <param group="destination" linkedToUrl="connectionParam:destinationConnectionName" name="bcc" title="BCC">
-          <type>
-            <textType/>
-          </type>
-        </param>
-        <param group="payload" linkedToUrl="connectionParam:destinationConnectionName" name="subject" title="Subject">
-          <type>
-            <textType/>
-          </type>
-        </param>
-        <param group="payload" linkedToUrl="connectionParam:destinationConnectionName" name="signature" title="Signature">
-          <type>
-            <textType/>
-          </type>
-        </param>
-      </generatedParameters>
+      <generatedParameters/>
     </apiCall>
     <apiCall apiId="com.provar.plugins.bundled.apis.control.WaitFor" name="WaitFor" testItemId="4" title="Wait For: {emailRead.messageCount &gt; 0}=&gt;{30}">
       <arguments>

@@ -129,5 +129,27 @@
         <clause name="substeps" testItemId="4"/>
       </clauses>
     </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.messaging.ReceiveMessage" name="ReceiveMessage" testItemId="5" title="Receive Message: GoogleEmail">
+      <arguments>
+        <argument id="sourceConnectionName">
+          <value class="value" valueClass="string">GoogleEmail</value>
+        </argument>
+        <argument id="timeoutSecs">
+          <value class="value" valueClass="decimal">120</value>
+        </argument>
+        <argument id="failOnTimeout">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">email</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="resultFormat">
+          <value class="value" valueClass="string">Auto</value>
+        </argument>
+      </arguments>
+    </apiCall>
   </steps>
 </testCase>
